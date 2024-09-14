@@ -283,7 +283,7 @@ body{
     background-size: cover;
     position: relative;
     border-radius: 16px;
-    margin-top: 16px;
+    margin-top: 30px;
     /* height: 441px; */
     overflow: hidden;
 }
@@ -350,6 +350,91 @@ body{
 .hero-section .btn-group button{
     flex-grow: 1;
 }
+
+.hero-section .btn-group button.light .white{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .hero-section{
+        display: flex;
+        flex-direction: row-reverse;
+        background-image: url('./assets/images/bg-image-desktop.png');
+    }
+
+    .hero-section .hero-animal{
+        display: none;
+    }
+
+    .hero-section .content{
+        max-width: 403px;
+        width: 100%;
+    }
+
+    .hero-section .content>*{
+        text-align: right;
+    }
+
+    .hero-section{
+        padding: 64px 85px;
+    }
+
+    .hero-section .content{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .hero-section .text h2, .hero-section .text h1{
+        width: 100%;
+        color: var(--neutral-0);
+    }
+
+    .hero-section .text h1{
+        font-size: 52px;
+    }
+
+    .hero-section .text h2{
+        font-size: 36px;
+    }
+
+    .hero-section .text p{
+        color: var(--neutral-20);
+    }
+
+    .hero-section .btn-group{
+        justify-content: end;
+        width: fit-content;
+    }
+
+    .hero-section .btn-group button{
+        background-color: var(--neutral-0);
+        color: var(--neutral-100);
+        width: fit-content;
+    }
+
+    .hero-section .btn-group button.light{
+        border-color: var(--neutral-0);
+        color: var(--neutral-0);
+        background-color: transparent;
+    }
+
+    .hero-section .btn-group button.light .white{
+        display: block;
+    }
+
+    .hero-section .btn-group button.light .blue{
+        display: none;
+    }
+}
+
+/* @media (min-width: 1200px){
+    .hero-section .hero-animal{
+        width: 650px;
+        display: block;
+    }
+} */
 
 /* EndHero Section Style */
 
