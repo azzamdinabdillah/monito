@@ -63,28 +63,136 @@
                 <div class="btn-group">
                     <button class="custom-btn-primary light">
                         View Intro
-                        <img class="blue" src="./assets/icons/media-play.svg" alt="">
-                        <img class="white" src="./assets/icons/media-play-white.svg" alt="">
+                        <img class="blue" src="./assets/images/play-btn.png" alt="">
+                        <img class="white" src="./assets/images/play-btn-white.png" alt="">
                     </button>
-                    <button class="custom-btn-primary">Explore Now</button>
+                    <button onclick="window.location.href = '#allDogs'" class="custom-btn-primary">Explore Now</button>
                 </div>
             </div>
-            <img src="./assets/images/hero-animal.png" alt="" class="hero-animal">
+            <img src="./assets/images/hero-animal.png" alt="" class="hero-animal mobile">
+            <img src="./assets/images/hero-animal-desktop.png" alt="" class="hero-animal desktop">
         </div>
 
-        <!-- <section class="dogs-list-wrapper">
-            <div class="title">
-                <h1>Small Dog</h1>
-                <h3>52 puppies</h3>
-            </div>
+        <section class="dog-section" id="allDogs">
+            <aside class="dog-filter">
+                <h1>Filter</h1>
 
-            <div class="dogs-list">
-                <article>
+                <div class="filter-group">
+                    <h2>Gender</h2>
 
-                </article>
+                    <div class="filter-input-group">
+                        <div class="item">
+                            <input type="checkbox">
+                            <label for="">Male</label>
+                        </div>
+
+                        <div class="item">
+                            <input type="checkbox">
+                            <label for="">Female</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <h2>Color</h2>
+
+                    <div class="filter-input-group">
+                        <div class="item">
+                            <input type="checkbox">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="15" height="15" rx="7.5" fill="#FF564F"/>
+                            </svg>                                
+                            <label for="">Red</label>
+                        </div>
+
+                        <div class="item">
+                            <input type="checkbox">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="15" height="15" rx="7.5" fill="#FFB672"/>
+                            </svg>                                
+                            <label for="">Apricot</label>
+                        </div>
+
+                        <div class="item">
+                            <input type="checkbox">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="15" height="15" rx="7.5" fill="#242B33"/>
+                            </svg>                                                               
+                            <label for="">Black</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="15" height="15" rx="7.5" fill="#CECECE"/>
+                            </svg>                                                                                 
+                            <label for="">Silver</label>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect y="0.5" width="15" height="15" rx="7.5" fill="#FFF7CE"/>
+                            </svg>                                                                                                      
+                            <label for="">Tan</label>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            
+            <div class="dogs-list-wrapper">
+                <div class="title">
+                    <div class="left">
+                        <h1>All Dogs</h1>
+                        <h3 class="dog-length">52 puppies</h3>
+                    </div>
+                    <div class="filter-mobile">
+                        <button class="right btn-filter-mobile">
+                            <img src="./assets/icons/filter.svg" alt="">
+                            <p>Filter</p>
+                        </button>
+
+                        <div class="filter-drawer">
+                            <div class="content-drawer">
+                                <div class="top">
+                                    <h1>Filter</h1>
+                                    <svg class="btn-close-drawer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 18L6 6M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>                                        
+                                </div>
+
+                                <div class="dog-filter mobile filter-settings-wrapper">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="dogs-list">
+                    <article>
+                        <img src="./assets/images/dog-1.png" alt="">
+                        <div class="text">
+                            <h4>MO502 - Poodle Tiny Yellow</h4>
+                            <p>Gene: <span>Female</span></p>
+                            <p>Age: <span>02 Months</span></p>
+                            <h4 class="price">3.900.000 VND</h4>
+                        </div>
+                    </article>
+    
+                    <article>
+                        <img src="./assets/images/dog-1.png" alt="">
+                        <div class="text">
+                            <h4>MO502 - Poodle Tiny Yellow</h4>
+                            <p>Gene: <span>Female</span></p>
+                            <p>Age: <span>02 Months</span></p>
+                            <h4 class="price">3.900.000 VND</h4>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </section> -->
+        </section>
+
     </main>
     
+    <script src="./javascript/index.mjs" type="module"></script>
 </body>
 </html>
