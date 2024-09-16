@@ -11,28 +11,30 @@
 <body>
 
     <header class="header-desktop">
-        <div class="left">
-            <aside>
-                <img class="logo" src="./assets/images/logo.png" alt="">
-            </aside>
-            <nav>
-                <a href="">Home</a>
-                <a href="">Category</a>
-                <a href="">About</a>
-                <a href="">Contact</a>
-            </nav>
-        </div>
-
-        <div class="right">
-            <div class="input-search">
-                <img src="./assets/icons/search.svg" alt="">
-                <input type="text" placeholder="Search something here!">
+        <div class="content">
+            <div class="left">
+                <aside>
+                    <img class="logo" src="./assets/images/logo.png" alt="">
+                </aside>
+                <nav>
+                    <a href="">Home</a>
+                    <a href="">Category</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                </nav>
             </div>
-            <button>Join the community</button>
-            <div class="dropdown-nav">
-                <img src="./assets/icons/flag-1.svg" alt="">
-                <p>VND</p>
-                <img src="./assets/icons/caret-down.svg" alt="">
+    
+            <div class="right">
+                <div class="input-search">
+                    <img src="./assets/icons/search.svg" alt="">
+                    <input type="text" placeholder="Search something here!">
+                </div>
+                <button>Join the community</button>
+                <div class="dropdown-nav">
+                    <img src="./assets/icons/flag-1.svg" alt="">
+                    <p>VND</p>
+                    <img src="./assets/icons/caret-down.svg" alt="">
+                </div>
             </div>
         </div>
     </header>
@@ -40,8 +42,22 @@
     <header class="header-mobile">
         <div class="left">
             <img src="./assets/icons/hamburger.svg" alt="" class="btn-open-nav">
-            <nav>
-                <h1>Nav bg</h1>
+            <nav class="">
+
+                <svg class="btn-close-navbar" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 21L3 3M21.0001 3L3 21.0001" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+
+                <div class="content">
+                    <img class="logo" src="./assets/images/logo.png" alt="">
+
+                    <div class="nav-link">
+                        <a href="">Home</a>
+                        <a href="">Category</a>
+                        <a href="">About</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
             </nav>
         </div>
 
@@ -188,10 +204,70 @@
                         </div>
                     </article>
                 </div>
+
+                <div class="pagination">
+                    <img src="./assets/icons/arrow-left.svg" alt="">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>...</p>
+                    <p>28</p>
+                    <img src="./assets/icons/arrow-right.svg" alt="">
+                </div>
             </div>
         </section>
 
     </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="register">
+                <h1>Register now so you don't miss our programs</h1>
+    
+                <div class="group">
+                    <input type="text" placeholder="Enter your Email">
+                    <button>Subscribe Now</button>
+                </div>
+            </div>
+    
+            <div class="menus">
+                <div class="link">
+                    <a href="">Home</a>
+                    <a href="">Category</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                </div>
+    
+                <div class="social-media">
+                    <a href="">
+                        <img src="./assets/icons/facebook.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./assets/icons/twitter.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./assets/icons/instagram.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./assets/icons/youtube.svg" alt="">
+                    </a>
+                </div>
+            </div>
+    
+            <hr>
+    
+            <div class="policy">
+                <img src="./assets/images/logo.png" alt="">
+    
+                <div class="link-policy">
+                    <a href="">Terms of Service</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+    
+                <p>© 2022 Monito. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
     
     <script src="./javascript/index.mjs" type="module"></script>
 </body>
